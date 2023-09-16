@@ -1,0 +1,5 @@
+.sticky-header {
+  /* Autres styles de la navbar */
+  opacity: 0; /* Définir l'opacité initiale à 0 */
+  transition: opacity 0.3s ease; /* Ajouter une transition pour l'opacité */
+}
