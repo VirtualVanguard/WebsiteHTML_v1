@@ -14,9 +14,9 @@
 	</head>
 	<body style="font-family: Mooli, sans-serif;" class="bg-stone-950">
 
-		<section id="virtualvanguard_all" class="relative w-full 2xl:px-80 xl:px-56 lg:px-28 md:px-16 sm:px-10 px-8 py-8 grid grid-cols-1 gap-y-8">
+		<section id="virtualvanguard_all" class="relative w-full 2xl:px-80 xl:px-56 lg:px-28 md:px-16 sm:px-10 px-8 py-12 grid grid-cols-1 gap-y-8" style="background-color: #0c0a09; opacity: 0.8; background-image:  linear-gradient(rgba(255, 255, 255, 0.10) 1px, transparent 1px), linear-gradient(to right, rgba(255, 255, 255, 0.10) 1px, #0c0a09 1px); background-size: 20px 20px;">
 
-			<div class="sticky-header hidden top-0 left-0 right-0 z-[500] w-full bg-stone-950 outline outline-white/25 2xl:px-80 xl:px-56 lg:px-28 md:px-16 sm:px-10 px-8 py-6">
+			<div class="sticky-header hidden top-0 left-0 right-0 z-[500] w-full bg-stone-950 border-b border-white/25 2xl:px-80 xl:px-56 lg:px-28 md:px-16 sm:px-10 px-8 py-6">
 				<div class="w-full flex items-center justify-between">
 					<div class="flex items-center gap-x-3">
 						<h1 class="text-2xl text-white font-bold">VirtualVanguard</h1>
@@ -26,7 +26,7 @@
 						<a href="#" class="hover:underline">Films</a>
 						<a href="#" class="hover:underline">Critiques</a>
 						<a href="#" class="hover:underline">Articles</a>
-						<a href="#" class="hover:underline">Dossier spéciaux</a>
+						<a href="#" class="hover:underline">Dossiers spéciaux</a>
 						<div class="w-1 aspect-square bg-white rounded-full"></div>
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
 					        <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z" clip-rule="evenodd" />
@@ -35,7 +35,7 @@
 				</div>
 			</div>
 			
-			<div class="group w-full rounded-xl overflow-hidden grayscale-0 hover:grayscale outline outline-white/25 hover:outline-white/75 transition-all cursor-pointer parallax-bg" style="background-image: url('https://images.alphacoders.com/132/1327999.jpeg'); background-size: cover; background-position: center; background-attachment: fixed;">
+			<div class="group w-full rounded-xl overflow-hidden grayscale-0 hover:grayscale outline outline-white/25 hover:outline-white/75 transition-all parallax-bg" style="background-image: url('https://images.alphacoders.com/132/1327999.jpeg'); background-size: cover; background-position: center; background-attachment: fixed;">
 				<div class="w-full p-10 bg-stone-950/[60%] group-hover:backdrop-blur-sm transition-all">
 					<div class="w-full flex items-center justify-between pb-3 border-b border-white/25">
 						<div class="flex items-center gap-x-3">
@@ -46,7 +46,7 @@
 							<a href="#" class="hover:underline">Films</a>
 							<a href="#" class="hover:underline">Critiques</a>
 							<a href="#" class="hover:underline">Articles</a>
-							<a href="#" class="hover:underline">Dossier spéciaux</a>
+							<a href="#" class="hover:underline">Dossiers spéciaux</a>
 							<div class="w-1 aspect-square bg-white rounded-full"></div>
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
 						        <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z" clip-rule="evenodd" />
@@ -54,9 +54,14 @@
 						</div>
 					</div>
 					<div class="mt-16 block">
-						<span class="px-4 py-2 text-md text-white border border-white/50 rounded-full">Critique de jeu vidéo</span>
-						<p class="mt-10 w-2/3 text-6xl text-white font-bold line-clamp-4 leading-tight">Starfield - Une Épopée Cosmique Attendue depuis Longtemps</p>
-						<p class="mt-5 w-2/3 text-xl text-white line-clamp-3">"Starfield" est un jeu qui a suscité une grande anticipation depuis son annonce, en tant que toute nouvelle franchise spatiale par les créateurs de la série "The Elder Scrolls" et "Fallout". Après avoir exploré des mondes fantastiques et post-apocalyptiques, Bethesda se lance dans les étoiles, et l'attente en valait la peine.</p>
+						<div class="w-full flex items-center justify-between">
+							<span class="px-4 py-2 text-sm text-white border border-white/50 rounded-full">Critique de jeu vidéo</span>
+							<div class="w-14 aspect-square rounded-full bg-green-500 border border-white flex items-center justify-center">
+								<p class="text-xl text-white">92</p>
+							</div>
+						</div>
+						<a href="#"><p class="mt-10 md:w-2/3 w-full md:text-6xl text-3xl text-white font-bold line-clamp-4 leading-tight">Starfield - Une Épopée Cosmique Attendue depuis Longtemps</p></a>
+						<p class="mt-5 md:w-2/3 w-full text-xl text-white line-clamp-3">"Starfield" est un jeu qui a suscité une grande anticipation depuis son annonce, en tant que toute nouvelle franchise spatiale par les créateurs de la série "The Elder Scrolls" et "Fallout". Après avoir exploré des mondes fantastiques et post-apocalyptiques, Bethesda se lance dans les étoiles, et l'attente en valait la peine.</p>
 						<div class="mt-5 flex items-center gap-x-3">
 							<div class="w-8 aspect-square rounded-full bg-[url('https://media.licdn.com/dms/image/D4D03AQEVGG2AYKcWEg/profile-displayphoto-shrink_800_800/0/1689257537162?e=2147483647&v=beta&t=zRC4FRGNuqcLMcCgUVhoOPb5ydiMbL0bZOYCuQ97Xko')] bg-center bg-cover"></div>
 							<p class="text-md text-white">Hugo Doueil</p>
@@ -69,12 +74,14 @@
 
 			<div class="w-full grid md:grid-cols-2 grid-cols-1 gap-8">
 
-				<div class="w-full rounded-xl flex items-center overflow-hidden outline outline-white/25 hover:outline-white/75 transition-all cursor-pointer">
-					<div class="w-1/4 h-full bg-[url('https://images7.alphacoders.com/439/439636.jpg')] bg-center bg-cover"></div>
-					<div class="w-3/4 px-6 py-4">
-						<span class="px-4 py-2 text-sm text-white border border-white/50 rounded-full">Critique de jeu vidéo</span>
-						<p class="mt-5 text-2xl text-white line-clamp-3">Grand Theft Auto V - Un Monument du Jeu Vidéo</p>
-						<p class="mt-3 text-md text-white/75 line-clamp-3">"Grand Theft Auto V" (GTA V) est une expérience vidéoludique qui transcende les frontières du jeu pour devenir un véritable monument de l'industrie. Sorti en 2013, ce chef-d'œuvre de Rockstar North a su captiver les joueurs du monde entier grâce à son monde ouvert immersif, son scénario brillamment écrit et ses personnages inoubliables.</p>
+				<div class="w-full group rounded-xl bg-stone-950 flex items-center overflow-hidden outline outline-white/25 hover:outline-white/75 transition-all cursor-pointer">
+					<div class="w-1/4 h-full grayscale-0 group-hover:grayscale bg-[url('https://upload.wikimedia.org/wikipedia/commons/f/fe/James_Cameron_by_Gage_Skidmore.jpg')] bg-center bg-cover transition-all"></div>
+					<div class="w-3/4 p-6">
+						<div class="w-full flex items-center justify-between">
+							<span class="px-4 py-2 text-sm text-white border border-white/50 rounded-full">Dossier spécial - Films</span>
+						</div>
+						<p class="mt-5 text-2xl text-white line-clamp-4">James Cameron - L'Innovateur de l'Écran d'Argent</p>
+						<p class="mt-3 text-md text-white/75 line-clamp-3">James Cameron est un réalisateur, scénariste et producteur de renom dont le nom est synonyme de films à succès, d'innovation technologique et d'aventures cinématographiques extraordinaires. Né le 16 août 1954 au Canada, Cameron a marqué l'histoire du cinéma avec des films qui ont repoussé les limites de la technologie et de l'imagination. Voici un aperçu de sa carrière exceptionnelle et de ses réalisations emblématiques.</p>
 						<div class="mt-5 flex items-center gap-x-3">
 							<div class="w-6 aspect-square rounded-full bg-[url('https://media.licdn.com/dms/image/D4D03AQEVGG2AYKcWEg/profile-displayphoto-shrink_800_800/0/1689257537162?e=2147483647&v=beta&t=zRC4FRGNuqcLMcCgUVhoOPb5ydiMbL0bZOYCuQ97Xko')] bg-center bg-cover"></div>
 							<p class="text-sm text-white">Hugo Doueil</p>
@@ -84,12 +91,14 @@
 					</div>
 				</div>
 
-				<div class="w-full rounded-xl flex items-center overflow-hidden outline outline-white/25 hover:outline-white/75 transition-all cursor-pointer">
-					<div class="w-1/4 h-full bg-[url('https://wallpapers.com/images/hd/red-dead-redemption-ii-phone-posse-silhouette-gnvmb4cdp2utjeha.jpg')] bg-center bg-cover"></div>
-					<div class="w-3/4 px-6 py-4">
-						<span class="px-4 py-2 text-sm text-white border border-white/50 rounded-full">Critique de jeu vidéo</span>
-						<p class="mt-5 text-2xl text-white line-clamp-3">Red Dead Redemption 2 - L'Épopée de l'Ouest Magnifiquement Brutal</p>
-						<p class="mt-3 text-md text-white/75 line-clamp-3">Red Dead Redemption 2, la suite tant attendue du jeu culte de 2010, est une véritable œuvre d'art interactive qui pousse les limites du jeu vidéo. Développé par Rockstar Games, le studio derrière la série "Grand Theft Auto", RDR2 plonge les joueurs dans un Far West immersif, réaliste et brutal, à une époque où les lois de la civilisation n'ont pas encore atteint les étendues sauvages de l'Amérique.</p>
+				<div class="w-full group rounded-xl bg-stone-950 flex items-center overflow-hidden outline outline-white/25 hover:outline-white/75 transition-all cursor-pointer">
+					<div class="w-1/4 h-full grayscale-0 group-hover:grayscale bg-[url('https://egw.news/cache/1/16/750/1663599398731-16x9.jpg')] bg-center bg-cover transition-all"></div>
+					<div class="w-3/4 p-6">
+						<div class="w-full flex items-center justify-between">
+							<span class="px-4 py-2 text-sm text-white border border-white/50 rounded-full">Dossier spécial - Jeux vidéos</span>
+						</div>
+						<p class="mt-5 text-2xl text-white line-clamp-4">Dan et Sam Houser : Les Visionnaires Derrière Rockstar Games</p>
+						<p class="mt-3 text-md text-white/75 line-clamp-3">Rockstar Games, l'un des noms les plus emblématiques de l'industrie du jeu vidéo, doit son succès retentissant à deux frères britanniques talentueux : Dan et Sam Houser. Ces deux hommes ont créé une véritable révolution dans le monde du jeu vidéo grâce à leur passion pour les histoires provocantes, les mondes ouverts époustouflants et les personnages mémorables.</p>
 						<div class="mt-5 flex items-center gap-x-3">
 							<div class="w-6 aspect-square rounded-full bg-[url('https://media.licdn.com/dms/image/D4D03AQEVGG2AYKcWEg/profile-displayphoto-shrink_800_800/0/1689257537162?e=2147483647&v=beta&t=zRC4FRGNuqcLMcCgUVhoOPb5ydiMbL0bZOYCuQ97Xko')] bg-center bg-cover"></div>
 							<p class="text-sm text-white">Hugo Doueil</p>
@@ -108,8 +117,13 @@
 					<div class="group w-full bg-[url('https://c4.wallpaperflare.com/wallpaper/948/782/354/minecraft-minecraft-dungeons-ocean-view-minecraft-dungeons-hidden-depths-4k-hd-wallpaper-preview.jpg')] bg-center bg-cover rounded-xl overflow-hidden grayscale-0 hover:grayscale outline outline-white/25 hover:outline-white/75 transition-all cursor-pointer">
 						<div class="w-full h-full p-5 bg-stone-950/[60%] group-hover:backdrop-blur-sm transition-all">
 							<div class="block pt-2">
-								<span class="px-4 py-2 text-sm text-white border border-white/50 rounded-full">Critique de jeu vidéo</span>
-								<p class="mt-10 text-2xl text-white font-bold line-clamp-3">Minecraft - Un Monde de Possibilités Infinies</p>
+								<div class="w-full flex items-center justify-between">
+									<span class="px-4 py-2 text-sm text-white border border-white/50 rounded-full">Critique de jeu vidéo</span>
+									<div class="w-14 aspect-square rounded-full bg-green-500 border border-white flex items-center justify-center">
+										<p class="text-xl text-white">97</p>
+									</div>
+								</div>
+								<p class="mt-10 text-2xl text-white font-bold line-clamp-4">Minecraft - Un Monde de Possibilités Infinies</p>
 								<p class="mt-5 text-md text-white line-clamp-3">Depuis sa sortie initiale en 2011, "Minecraft" est devenu un phénomène mondial, un véritable monument du monde des jeux vidéo. Ce jeu sandbox sans fin a captivé des millions de joueurs de tous âges et de tous horizons grâce à sa liberté créative, à sa simplicité apparente et à son potentiel infini.</p>
 								<div class="mt-5 flex items-center gap-x-3">
 									<div class="w-6 aspect-square rounded-full bg-[url('https://media.licdn.com/dms/image/D4D03AQEVGG2AYKcWEg/profile-displayphoto-shrink_800_800/0/1689257537162?e=2147483647&v=beta&t=zRC4FRGNuqcLMcCgUVhoOPb5ydiMbL0bZOYCuQ97Xko')] bg-center bg-cover"></div>
@@ -124,8 +138,13 @@
 					<div class="group w-full bg-[url('https://c4.wallpaperflare.com/wallpaper/738/436/859/naughty-dog-the-last-of-us-part-ii-playstation-ellie-ashley-johnson-hd-wallpaper-preview.jpg')] bg-center bg-cover rounded-xl overflow-hidden grayscale-0 hover:grayscale outline outline-white/25 hover:outline-white/75 transition-all cursor-pointer">
 						<div class="w-full h-full p-5 bg-stone-950/[60%] group-hover:backdrop-blur-sm transition-all">
 							<div class="block pt-2">
-								<span class="px-4 py-2 text-sm text-white border border-white/50 rounded-full">Critique de jeu vidéo</span>
-								<p class="mt-10 text-2xl text-white font-bold line-clamp-3">Une Odyssée Émotionnelle et Morale Impressionnante</p>
+								<div class="w-full flex items-center justify-between">
+									<span class="px-4 py-2 text-sm text-white border border-white/50 rounded-full">Critique de jeu vidéo</span>
+									<div class="w-14 aspect-square rounded-full bg-green-500 border border-white flex items-center justify-center">
+										<p class="text-xl text-white">90</p>
+									</div>
+								</div>
+								<p class="mt-10 text-2xl text-white font-bold line-clamp-4">The Last of Us 2 - Une Odyssée Émotionnelle et Morale Impressionnante</p>
 								<p class="mt-5 text-md text-white line-clamp-3">"The Last of Us Part II" est bien plus qu'un simple jeu vidéo. C'est une expérience émotionnelle qui vous hante longtemps après avoir éteint votre console. Naughty Dog a créé une suite qui ose défier les attentes, tout en livrant une histoire profonde et des performances de pointe.</p>
 								<div class="mt-5 flex items-center gap-x-3">
 									<div class="w-6 aspect-square rounded-full bg-[url('https://media.licdn.com/dms/image/D4D03AQEVGG2AYKcWEg/profile-displayphoto-shrink_800_800/0/1689257537162?e=2147483647&v=beta&t=zRC4FRGNuqcLMcCgUVhoOPb5ydiMbL0bZOYCuQ97Xko')] bg-center bg-cover"></div>
@@ -140,8 +159,13 @@
 					<div class="group w-full bg-[url('https://images.wallpapersden.com/image/download/god-of-war-ragnaroek-2023_bW5nZW6UmZqaraWkpJRobWllrWZtaGs.jpg')] bg-center bg-cover rounded-xl overflow-hidden grayscale-0 hover:grayscale outline outline-white/25 hover:outline-white/75 transition-all cursor-pointer">
 						<div class="w-full h-full p-5 bg-stone-950/[60%] group-hover:backdrop-blur-sm transition-all">
 							<div class="block pt-2">
-								<span class="px-4 py-2 text-sm text-white border border-white/50 rounded-full">Critique de jeu vidéo</span>
-								<p class="mt-10 text-2xl text-white font-bold line-clamp-3">La Renaissance Épique de Kratos</p>
+								<div class="w-full flex items-center justify-between">
+									<span class="px-4 py-2 text-sm text-white border border-white/50 rounded-full">Critique de jeu vidéo</span>
+									<div class="w-14 aspect-square rounded-full bg-green-500 border border-white flex items-center justify-center">
+										<p class="text-xl text-white">91</p>
+									</div>
+								</div>
+								<p class="mt-10 text-2xl text-white font-bold line-clamp-4">God of War (2018) - La Renaissance Épique de Kratos</p>
 								<p class="mt-5 text-md text-white line-clamp-3">"God of War" (2018) est une œuvre magistrale qui marque un tournant majeur dans la franchise, réinventant le personnage emblématique de Kratos tout en conservant l'essence de la série. Ce n'est pas seulement un jeu, c'est une expérience inoubliable qui transcende les limites du médium.</p>
 								<div class="mt-5 flex items-center gap-x-3">
 									<div class="w-6 aspect-square rounded-full bg-[url('https://media.licdn.com/dms/image/D4D03AQEVGG2AYKcWEg/profile-displayphoto-shrink_800_800/0/1689257537162?e=2147483647&v=beta&t=zRC4FRGNuqcLMcCgUVhoOPb5ydiMbL0bZOYCuQ97Xko')] bg-center bg-cover"></div>
@@ -156,9 +180,56 @@
 					<div class="group w-full bg-[url('https://images.alphacoders.com/613/thumb-1920-613642.jpg')] bg-center bg-cover rounded-xl overflow-hidden grayscale-0 hover:grayscale outline outline-white/25 hover:outline-white/75 transition-all cursor-pointer">
 						<div class="w-full h-full p-5 bg-stone-950/[60%] group-hover:backdrop-blur-sm transition-all">
 							<div class="block pt-2">
-								<span class="px-4 py-2 text-sm text-white border border-white/50 rounded-full">Critique de jeu vidéo</span>
-								<p class="mt-10 text-2xl text-white font-bold line-clamp-3">Une Œuvre d'Art Interactive Incomplète - Metal Gear Solid V</p>
+								<div class="w-full flex items-center justify-between">
+									<span class="px-4 py-2 text-sm text-white border border-white/50 rounded-full">Critique de jeu vidéo</span>
+									<div class="w-14 aspect-square rounded-full bg-green-500 border border-white flex items-center justify-center">
+										<p class="text-xl text-white">98</p>
+									</div>
+								</div>
+								<p class="mt-10 text-2xl text-white font-bold line-clamp-4">Metal Gear Solid V - Une Œuvre d'Art Interactive Incomplète</p>
 								<p class="mt-5 text-md text-white line-clamp-3">"Metal Gear Solid V: The Phantom Pain" est bien plus qu'un simple jeu vidéo. C'est une expérience artistique, une œuvre de génie, une révolution dans le monde du jeu vidéo. Hideo Kojima et son équipe de Kojima Productions ont non seulement créé un jeu qui défie les conventions, mais ils ont également redéfini le genre de l'infiltration et ont offert aux joueurs une expérience inoubliable.</p>
+								<div class="mt-5 flex items-center gap-x-3">
+									<div class="w-6 aspect-square rounded-full bg-[url('https://media.licdn.com/dms/image/D4D03AQEVGG2AYKcWEg/profile-displayphoto-shrink_800_800/0/1689257537162?e=2147483647&v=beta&t=zRC4FRGNuqcLMcCgUVhoOPb5ydiMbL0bZOYCuQ97Xko')] bg-center bg-cover"></div>
+									<p class="text-sm text-white">Hugo Doueil</p>
+									<div class="w-1 aspect-square bg-white rounded-full"></div>
+									<p class="text-sm text-white">15 septembre 2023 à 22h40</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="group w-full bg-[url('https://images.alphacoders.com/274/274383.jpg')] bg-center bg-cover rounded-xl overflow-hidden grayscale-0 hover:grayscale outline outline-white/25 hover:outline-white/75 transition-all cursor-pointer">
+						<div class="w-full h-full p-5 bg-stone-950/[60%] group-hover:backdrop-blur-sm transition-all">
+							<div class="block pt-2">
+								<div class="w-full flex items-center justify-between">
+									<span class="px-4 py-2 text-sm text-white border border-white/50 rounded-full">Critique de jeu vidéo</span>
+									<div class="w-14 aspect-square rounded-full bg-red-500 border border-white flex items-center justify-center">
+										<p class="text-xl text-white">45</p>
+									</div>
+								</div>
+								<p class="mt-10 text-2xl text-white font-bold line-clamp-4">Duke Nukem Forever - 15 ans de développement pour ça</p>
+								<p class="mt-5 text-md text-white line-clamp-3">"Duke Nukem Forever" est un jeu qui a été longtemps attendu par les fans de la série, mais malheureusement, il n'a pas réussi à répondre aux attentes élevées. Sorti en 2011, le jeu a connu un développement tumultueux de près de quinze ans, et cela se ressent dans son résultat final.</p>
+								<div class="mt-5 flex items-center gap-x-3">
+									<div class="w-6 aspect-square rounded-full bg-[url('https://media.licdn.com/dms/image/D4D03AQEVGG2AYKcWEg/profile-displayphoto-shrink_800_800/0/1689257537162?e=2147483647&v=beta&t=zRC4FRGNuqcLMcCgUVhoOPb5ydiMbL0bZOYCuQ97Xko')] bg-center bg-cover"></div>
+									<p class="text-sm text-white">Hugo Doueil</p>
+									<div class="w-1 aspect-square bg-white rounded-full"></div>
+									<p class="text-sm text-white">15 septembre 2023 à 22h40</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="group w-full bg-[url('https://images7.alphacoders.com/434/434329.jpg')] bg-center bg-cover rounded-xl overflow-hidden grayscale-0 hover:grayscale outline outline-white/25 hover:outline-white/75 transition-all cursor-pointer">
+						<div class="w-full h-full p-5 bg-stone-950/[60%] group-hover:backdrop-blur-sm transition-all">
+							<div class="block pt-2">
+								<div class="w-full flex items-center justify-between">
+									<span class="px-4 py-2 text-sm text-white border border-white/50 rounded-full">Critique de jeu vidéo</span>
+									<div class="w-14 aspect-square rounded-full bg-green-500 border border-white flex items-center justify-center">
+										<p class="text-xl text-white">85</p>
+									</div>
+								</div>
+								<p class="mt-10 text-2xl text-white font-bold line-clamp-4">Watch Dogs - Plongée dans un Monde Connecté et Sombre</p>
+								<p class="mt-5 text-md text-white line-clamp-3">Lorsque "Watch Dogs" a été annoncé, il a suscité une grande anticipation en promettant une plongée dans un univers de surveillance et de piratage, mettant en lumière le pouvoir de la technologie dans notre monde moderne. Ubisoft Montreal nous a offert une expérience qui a tenu bon sur ses promesses, même si elle a présenté quelques irrégularités en cours de route.</p>
 								<div class="mt-5 flex items-center gap-x-3">
 									<div class="w-6 aspect-square rounded-full bg-[url('https://media.licdn.com/dms/image/D4D03AQEVGG2AYKcWEg/profile-displayphoto-shrink_800_800/0/1689257537162?e=2147483647&v=beta&t=zRC4FRGNuqcLMcCgUVhoOPb5ydiMbL0bZOYCuQ97Xko')] bg-center bg-cover"></div>
 									<p class="text-sm text-white">Hugo Doueil</p>
@@ -171,6 +242,40 @@
 
 				</div>
 
+			</div>
+
+			<div class="border border-white/25 mt-8 bg-stone-950 rounded-xl">
+				<div class="w-full pt-8 pb-12 flex items-start justify-between gap-8 px-8">
+					<div class="flex items-start gap-x-14">
+						<div class="block grid grid-cols-1">
+							<p class="text-lg text-white">Produit proposé</p>
+							<a href="#" class="mt-5 text-sm text-white hover:underline">Connexion / inscription</a>
+							<a href="#" class="mt-2 text-sm text-white hover:underline">Présentation du site</a>
+							<a href="#" class="mt-2 text-sm text-white hover:underline">Changelog</a>
+						</div>
+						<div class="block grid grid-cols-1">
+							<p class="text-lg text-white">Légalité et Sécurité</p>
+							<a href="#" class="mt-5 text-sm text-white hover:underline">Contact</a>
+							<a href="#" class="mt-2 text-sm text-white hover:underline">Conditions et termes</a>
+							<a href="#" class="mt-2 text-sm text-white hover:underline">Politique de sécurité</a>
+						</div>
+						<div class="block grid grid-cols-1">
+							<p class="text-lg text-white">Réseaux sociaux</p>
+							<a href="#" class="mt-5 text-sm text-white hover:underline">Discord</a>
+							<a href="#" class="mt-2 text-sm text-white hover:underline">Github</a>
+						</div>
+					</div>
+					<div class="flex items-start gap-x-14">
+						<div class="block grid grid-cols-1">
+							<p class="text-lg text-white">VirtualVanguard</p>
+							<p class="w-[12rem] mt-5 text-sm text-white">les dernières news, critiques et articles concernant les jeux vidéos et les films.</p>
+						</div>
+					</div>
+				</div>
+				<div class="w-full pb-8 flex items-center justify-between gap-8 px-8">
+					<p class="text-2xl text-white">VirtualVanguard</p>
+					<p class="text-sm text-white">Copyright 2023</p>
+				</div>
 			</div>
 
 		</section>
