@@ -1,15 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>VirtualVanguard - Critiques / articles sur le jeu vidéo</title>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <title>VirtualVanguard - Critiques / articles sur le jeu vidéo</title>
+	    <meta name="description" content="VirtualVanguard - Votre source incontournable pour des critiques et des articles détaillés sur les jeux vidéo. Découvrez les dernières tendances et analyses du monde du jeu vidéo.">
+	    <link rel="icon" href="ressources/images/logo/logo.ico">
+	    <link rel="apple-touch-icon" href="ressources/images/logo/logo.png">
+	    <meta name="keywords" content="jeux vidéo, critiques, analyses, VirtualVanguard, articles, tendances, gaming">
+	    <meta name="author" content="Hugo Doueil, VirtualVanguard">
+	    <meta http-equiv="content-language" content="fr">
+	    <meta name="copyright" content="Hugo Doueil, VirtualVanguard">
+	    <meta http-equiv="cache-control" content="no-cache">
+	    <meta name="mobile-web-app-capable" content="yes">
+	    <link rel="canonical" href="https://hugodoueil.fr/virtualvanguard">
+	    <meta name="theme-color" content="#0C0A09">
+
+	    <!-- Open Graph (pour les médias sociaux) (Facebook) -->
+	    <meta property="og:title" content="VirtualVanguard - Critiques / articles sur le jeu vidéo">
+		<meta property="og:description" content="VirtualVanguard - Votre source incontournable pour des critiques et des articles détaillés sur les jeux vidéo. Découvrez les dernières tendances et analyses du monde du jeu vidéo.">
+		<meta property="og:image" content="ressources/images/logo/logo.png">
+		<meta property="og:url" content="https://hugodoueil.fr/virtualvanguard">
+
+		<!-- Twitter Cards -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@virtualvanguard">
+		<meta name="twitter:title" content="VirtualVanguard - Critiques / articles sur le jeu vidéo">
+		<meta name="twitter:description" content="VirtualVanguard - Votre source incontournable pour des critiques et des articles détaillés sur les jeux vidéo. Découvrez les dernières tendances et analyses du monde du jeu vidéo.">
+		<meta name="twitter:image" content="ressources/images/logo/logo.png">
 
 		<!-- TAILWINDCSS -->
 		<script src="https://cdn.tailwindcss.com"></script>
 
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="ressources/css/header.css">
+		<link rel="stylesheet" type="text/css" href="ressources/css/parallax.css">
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,6 +59,9 @@
 						<a href="critiques/index.html" class="hover:underline">Critiques</a>
 						<a href="articles/index.html" class="hover:underline">Articles</a>
 						<a href="dossiers/index.html" class="hover:underline">Dossiers spéciaux</a>
+						<!--<a href="#" class="text-amber-500 hover:underline" title="VirtualVanguard Game Awards 2024">[ VVGA 2024 ]</a>-->
+						<!--<a href="#" class="hover:underline" title="Spécial E3 2024">[ Spécial <span class="text-red-500">E</span><span class="text-amber-500">3</span> 2024 ]</a>-->
+						<!--<a href="#" class="text-violet-500 hover:underline" title="Spécial The Game Awards 2024">[ Spécial TGA 2024 ]</a>-->
 						<div class="w-1 aspect-square bg-white rounded-full"></div>
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 cursor-pointer">
 					        <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z" clip-rule="evenodd" />
@@ -47,8 +75,9 @@
 				</div>
 			</div>
 			
-			<div id="parallax-bg" class="parallax-bg group w-full rounded-xl overflow-hidden grayscale-0 hover:grayscale outline outline-white/25 hover:outline-white/75 transition-all" style="background-image: url('https://www.starfieldguide.com/wp-content/uploads/2022/06/first-steps-1920-x1080.jpeg'); background-size: cover; background-position: center; background-attachment: fixed;">
-				<div class="w-full md:p-10 p-5 bg-stone-950/[60%] group-hover:backdrop-blur-sm transition-all">
+			<div class="parallax-container group w-full rounded-xl overflow-hidden grayscale-0 hover:grayscale outline outline-white/25 hover:outline-white/75 transition-all">
+		    	<div id="parallax-bg" class="parallax-bg" style="background-image: url('https://www.starfieldguide.com/wp-content/uploads/2022/06/first-steps-1920-x1080.jpeg'); background-size: cover; background-position: center; background-attachment: fixed;"></div>
+			    <div class="w-full md:p-10 p-5 bg-stone-950/[60%] group-hover:backdrop-blur-sm transition-all">
 					<div class="w-full flex items-center justify-between pb-3 border-b border-white/25">
 						<div class="flex items-center gap-x-3">
 							<a href="index.html"><h1 class="text-2xl text-white font-bold">VirtualVanguard</h1></a>
@@ -59,6 +88,9 @@
 							<a href="critiques/index.html" class="hover:underline">Critiques</a>
 							<a href="articles/index.html" class="hover:underline">Articles</a>
 							<a href="dossiers/index.html" class="hover:underline">Dossiers spéciaux</a>
+							<!--<a href="#" class="text-amber-500 hover:underline" title="VirtualVanguard Game Awards 2023">[ VVGA 2023 ]</a>-->
+							<!--<a href="#" class="hover:underline" title="Spécial E3 2024">[ Spécial <span class="text-red-500">E</span><span class="text-amber-500">3</span> 2024 ]</a>-->
+							<!--<a href="#" class="text-violet-500 hover:underline" title="Spécial The Game Awards 2024">[ Spécial TGA 2024 ]</a>-->
 							<div class="w-1 aspect-square bg-white rounded-full"></div>
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 cursor-pointer">
 						        <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z" clip-rule="evenodd" />
@@ -189,7 +221,7 @@
 
 			</div>
 
-			<div class="w-full grid md:grid-cols-2 grid-cols-1 gap-8">
+			<div class="w-full grid md:grid-cols-1 grid-cols-1 gap-8">
 
 				<div class="w-full group rounded-xl bg-stone-950 flex items-center overflow-hidden outline outline-white/25 hover:outline-white/75 transition-all cursor-pointer">
 					<div class="w-1/4 h-full grayscale-0 group-hover:grayscale bg-[url('https://upload.wikimedia.org/wikipedia/commons/f/fe/James_Cameron_by_Gage_Skidmore.jpg')] bg-center bg-cover transition-all"></div>
@@ -216,6 +248,78 @@
 						</div>
 						<p class="mt-5 text-2xl text-white line-clamp-4 font-bold">Dan et Sam Houser : Les Visionnaires Derrière Rockstar Games</p>
 						<p class="mt-3 text-md text-white line-clamp-3">Rockstar Games, l'un des noms les plus emblématiques de l'industrie du jeu vidéo, doit son succès retentissant à deux frères britanniques talentueux : Dan et Sam Houser. Ces deux hommes ont créé une véritable révolution dans le monde du jeu vidéo grâce à leur passion pour les histoires provocantes, les mondes ouverts époustouflants et les personnages mémorables.</p>
+						<div class="mt-5 flex items-center gap-x-3">
+							<div class="w-6 aspect-square rounded-full bg-[url('https://media.licdn.com/dms/image/D4D03AQEVGG2AYKcWEg/profile-displayphoto-shrink_800_800/0/1689257537162?e=2147483647&v=beta&t=zRC4FRGNuqcLMcCgUVhoOPb5ydiMbL0bZOYCuQ97Xko')] bg-center bg-cover"></div>
+							<p class="text-sm text-white">Hugo Doueil</p>
+							<div class="w-1 aspect-square bg-white rounded-full"></div>
+							<p class="text-sm text-white">15 septembre 2023 à 22h40</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="w-full grid md:grid-cols-2 grid-cols-1 gap-8">
+
+				<div class="w-full group rounded-xl bg-stone-950 flex items-center overflow-hidden outline outline-white/25 hover:outline-white/75 transition-all cursor-pointer">
+					<div class="w-1/4 h-full grayscale-0 group-hover:grayscale bg-[url('https://static.vecteezy.com/system/resources/previews/007/166/964/non_2x/versus-or-vs-logo-design-template-vector.jpg')] bg-center bg-cover transition-all"></div>
+					<div class="w-3/4 p-6">
+						<div class="w-full flex items-center justify-between">
+							<span class="px-4 py-2 text-sm text-white border border-white/50 rounded-full">Battle Vanguard</span>
+						</div>
+						<p class="mt-5 text-2xl text-white line-clamp-4 font-bold">Battle Vanguard : Grand Theft Auto 5 vs. Watch Dogs</p>
+						<p class="mt-3 text-md text-white line-clamp-3">Deux mastodontes de l'ère moderne du jeu vidéo se confrontent. D'un côté, le très célèbre et controversé "Grand Theft Auto V" (GTA5) de Rockstar Games, et de l'autre, "Watch Dogs", la nouvelle franchise d'Ubisoft centrée sur le piratage et la surveillance. Qui sortira vainqueur de cette bataille urbaine?</p>
+						<div class="mt-5 flex items-center gap-x-3">
+							<div class="w-6 aspect-square rounded-full bg-[url('https://media.licdn.com/dms/image/D4D03AQEVGG2AYKcWEg/profile-displayphoto-shrink_800_800/0/1689257537162?e=2147483647&v=beta&t=zRC4FRGNuqcLMcCgUVhoOPb5ydiMbL0bZOYCuQ97Xko')] bg-center bg-cover"></div>
+							<p class="text-sm text-white">Hugo Doueil</p>
+							<div class="w-1 aspect-square bg-white rounded-full"></div>
+							<p class="text-sm text-white">15 septembre 2023 à 22h40</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="w-full group rounded-xl bg-stone-950 flex items-center overflow-hidden outline outline-white/25 hover:outline-white/75 transition-all cursor-pointer">
+					<div class="w-1/4 h-full grayscale-0 group-hover:grayscale bg-[url('https://images.alphacoders.com/119/1190407.jpg')] bg-center bg-cover transition-all"></div>
+					<div class="w-3/4 p-6">
+						<div class="w-full flex items-center justify-between">
+							<span class="px-4 py-2 text-sm text-white border border-white/50 rounded-full">Vanguard Time Machine</span>
+						</div>
+						<p class="mt-5 text-2xl text-white line-clamp-4 font-bold">Vanguard Time Machine : Retour en 2001 avec "Final Fantasy X"</p>
+						<p class="mt-3 text-md text-white line-clamp-3">Flashback : 2001, une année iconique pour le monde du jeu vidéo. L'époque où les joueurs du monde entier se sont plongés pour la première fois dans l'archipel tropical de Spira, découvrant l'histoire poignante de Tidus et Yuna grâce à "Final Fantasy X".</p>
+						<div class="mt-5 flex items-center gap-x-3">
+							<div class="w-6 aspect-square rounded-full bg-[url('https://media.licdn.com/dms/image/D4D03AQEVGG2AYKcWEg/profile-displayphoto-shrink_800_800/0/1689257537162?e=2147483647&v=beta&t=zRC4FRGNuqcLMcCgUVhoOPb5ydiMbL0bZOYCuQ97Xko')] bg-center bg-cover"></div>
+							<p class="text-sm text-white">Hugo Doueil</p>
+							<div class="w-1 aspect-square bg-white rounded-full"></div>
+							<p class="text-sm text-white">15 septembre 2023 à 22h40</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="w-full group rounded-xl bg-stone-950 flex items-center overflow-hidden outline outline-white/25 hover:outline-white/75 transition-all cursor-pointer">
+					<div class="w-1/4 h-full grayscale-0 group-hover:grayscale bg-[url('https://64.media.tumblr.com/b0657ad596bb2dd39a4d051aa5263320/tumblr_inline_o85g4lxKW61rrd5ve_500.png')] bg-center bg-cover transition-all"></div>
+					<div class="w-3/4 p-6">
+						<div class="w-full flex items-center justify-between">
+							<span class="px-4 py-2 text-sm text-white border border-white/50 rounded-full">Fenêtre sur les coulisses</span>
+						</div>
+						<p class="mt-5 text-2xl text-white line-clamp-4 font-bold">Fenêtre sur les coulisses : La création d'une scène de pluie dans le cinéma</p>
+						<p class="mt-3 text-md text-white line-clamp-3">Plongeons dans les coulisses de la réalisation cinématographique pour découvrir la magie derrière l'une des scènes les plus communes et pourtant captivantes : une scène de pluie.</p>
+						<div class="mt-5 flex items-center gap-x-3">
+							<div class="w-6 aspect-square rounded-full bg-[url('https://media.licdn.com/dms/image/D4D03AQEVGG2AYKcWEg/profile-displayphoto-shrink_800_800/0/1689257537162?e=2147483647&v=beta&t=zRC4FRGNuqcLMcCgUVhoOPb5ydiMbL0bZOYCuQ97Xko')] bg-center bg-cover"></div>
+							<p class="text-sm text-white">Hugo Doueil</p>
+							<div class="w-1 aspect-square bg-white rounded-full"></div>
+							<p class="text-sm text-white">15 septembre 2023 à 22h40</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="w-full group rounded-xl bg-stone-950 flex items-center overflow-hidden outline outline-white/25 hover:outline-white/75 transition-all cursor-pointer">
+					<div class="w-1/4 h-full grayscale-0 group-hover:grayscale bg-[url('https://fingerguns.net/wp-content/uploads/2022/10/Marauders-Preview-Header-min.png')] bg-center bg-cover transition-all"></div>
+					<div class="w-3/4 p-6">
+						<div class="w-full flex items-center justify-between">
+							<span class="px-4 py-2 text-sm text-white border border-white/50 rounded-full">Adaptation Watch</span>
+						</div>
+						<p class="mt-5 text-2xl text-white line-clamp-4 font-bold">Adaptation Watch : Le mystérieux voyage de "Marauders of the Lost World"</p>
+						<p class="mt-3 text-md text-white line-clamp-3">"Marauders of the Lost World" est un jeu vidéo culte des années 90, un RPG en monde ouvert, connu pour ses quêtes intrigantes, ses personnages mémorables et son monde fantastique riche en détails. Les joueurs se souviennent avec nostalgie des heures passées à explorer les contrées mystiques, résoudre des énigmes et s'allier ou combattre différentes factions.</p>
 						<div class="mt-5 flex items-center gap-x-3">
 							<div class="w-6 aspect-square rounded-full bg-[url('https://media.licdn.com/dms/image/D4D03AQEVGG2AYKcWEg/profile-displayphoto-shrink_800_800/0/1689257537162?e=2147483647&v=beta&t=zRC4FRGNuqcLMcCgUVhoOPb5ydiMbL0bZOYCuQ97Xko')] bg-center bg-cover"></div>
 							<p class="text-sm text-white">Hugo Doueil</p>
