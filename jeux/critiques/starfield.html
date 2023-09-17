@@ -10,6 +10,7 @@
 
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="../../ressources/css/header.css">
+		<link rel="stylesheet" type="text/css" href="../../ressources/css/slider.css">
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +18,7 @@
 	</head>
 	<body style="font-family: Mooli, sans-serif;" class="bg-stone-950">
 
-		<section id="virtualvanguard_all" class="relative w-full 2xl:px-80 xl:px-56 lg:px-28 md:px-16 sm:px-10 px-8 py-12 grid grid-cols-1 gap-y-8" style="background-color: #0c0a09; opacity: 0.8; background-image:  linear-gradient(rgba(255, 255, 255, 0.10) 1px, transparent 1px), linear-gradient(to right, rgba(255, 255, 255, 0.10) 1px, #0c0a09 1px); background-size: 20px 20px;">
+		<section id="virtualvanguard_all" class="relative w-full 2xl:px-80 xl:px-56 lg:px-28 md:px-16 sm:px-10 px-8 py-12 grid grid-cols-1 gap-y-8" style="background-color: #0c0a09; opacity: 1; background-image:  linear-gradient(rgba(255, 255, 255, 0.10) 2px, transparent 2px), linear-gradient(90deg, rgba(255, 255, 255, 0.10) 2px, transparent 2px), linear-gradient(rgba(255, 255, 255, 0.10) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.10) 1px, #0c0a09 1px); background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px; background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;">
 
 			<div class="sticky-header hidden top-0 left-0 right-0 z-[500] w-full bg-stone-950 border-b border-white/25 2xl:px-80 xl:px-56 lg:px-28 md:px-16 sm:px-10 px-8 py-6">
 				<div class="w-full flex items-center justify-between">
@@ -96,6 +97,29 @@
 				<p class="text-md text-white">En conclusion, "Starfield" est une expérience de jeu spatiale ambitieuse qui a répondu aux attentes élevées des fans de Bethesda. Si vous avez toujours rêvé de partir à l'aventure dans les étoiles, "Starfield" offre une opportunité passionnante de le faire. Malgré quelques problèmes techniques mineurs, c'est un titre qui mérite sa place parmi les grandes franchises de jeux de rôle. L'univers de "Starfield" est une épopée cosmique qui promet de captiver les joueurs pendant de nombreuses années à venir.</p>
 			</div>
 
+			<div id="slider" class="group relative w-full aspect-video bg-[url('https://www.starfieldguide.com/wp-content/uploads/2022/06/first-steps-1920-x1080.jpeg')] bg-center bg-cover rounded-xl border border-white/25 overflow-hidden transition-all">
+				<div class="absolute bottom-10 w-full opacity-0 group-hover:opacity-100 flex items-center justify-center transition-all">
+		            <div id="slider_content" class="px-2 py-1 bg-stone-950/25 backdrop-blur-sm border border-white/25 text-white text-sm transition-all"></div>
+		        </div>
+		        <div id="slider_autoplay" class="absolute top-10 left-10 p-4 border border-white/25 bg-stone-950 text-white rounded-full cursor-pointer opacity-0 group-hover:opacity-100 transition-all">
+		            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+					  	<path fill-rule="evenodd" d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z" clip-rule="evenodd" />
+					</svg>
+		        </div>
+		        <div class="w-full h-full flex items-center justify-between px-10 opacity-0 group-hover:opacity-100 transition-all">
+		            <div id="slider_nextImage" class="p-4 border border-white/25 bg-stone-950 text-white rounded-full cursor-pointer">
+		                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+		                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+		                </svg>
+		            </div>
+		            <div id="slider_lastImage" class="p-4 border border-white/25 bg-stone-950 text-white rounded-full cursor-pointer">
+		                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+		                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+		                </svg>
+		            </div>
+		        </div>
+			</div>
+
 			<div class="border border-white/25 bg-stone-950 rounded-xl">
 				<div class="w-full pt-8 pb-12 sm:flex grid grid-cols-1 items-start justify-between gap-8 px-8">
 					<div class="md:flex grid grid-cols-1 items-start md:gap-14 gap-6">
@@ -132,12 +156,26 @@
 
 		</section>
 
+		<script type="text/javascript">
+			// Liste des URLs des images à afficher dans le slider
+	        const imageUrls = [
+	            'https://www.starfieldguide.com/wp-content/uploads/2022/06/first-steps-1920-x1080.jpeg',
+	            'https://images7.alphacoders.com/131/1318988.jpeg',
+	            'https://images5.alphacoders.com/132/1324384.png',
+	            'https://images.ctfassets.net/rporu91m20dc/2IGcp6tavPJSgdZPLUqRI8/a1546de56e89c7f02e390b7e4fac0d34/SaturnSet1920.png',
+	            'https://beanstalk.io/wp-content/uploads/2022/10/17-1.png',
+	            'https://rare-gallery.com/mocahbig/1361485-Starfield-4k-Ultra-HD-Wallpaper.jpg',
+	            // Ajoutez ici d'autres URLs d'images
+	        ];
+		</script>
+
 		<!-- Jquery -->
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 		<!-- Javascript -->
 		<script src="../../ressources/javascript/header.js"></script>
 		<script src="../../ressources/javascript/parallax.js"></script>
+		<script src="../../ressources/javascript/slider.js"></script>
 
 	</body>
 </html>
